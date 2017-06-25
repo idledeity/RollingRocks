@@ -1,0 +1,17 @@
+{
+  "name": "rollingrocks",
+  "version": "0.0.1",
+  "description": "Interactive rock rolling game",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.3",
+    "poly-decomp": "^0.0.1",
+    "matter-js": "^0.12.0",
+    "phaser-ce": "^2.8.0",
+    "socket.io": "^2.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/idledeity/RollingRocks"
+  }
+}
