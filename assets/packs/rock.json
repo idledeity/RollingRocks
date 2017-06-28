@@ -1,0 +1,16 @@
+{ 
+    "rock": [
+        {
+            "type": "image",
+            "key": "sprites/rock.png",
+            "url": "assets/sprites/rock.png",
+            "overwrite": false
+        },
+        {
+            "type": "json",
+            "key": "objects/rock.json",
+            "url": "assets/objects/rock.json",
+            "overwrite": false
+        }
+    ]
+}
