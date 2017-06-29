@@ -16,14 +16,13 @@ class GameObject {
 
         // Initialize the object's sprite
         if (this.definition.sprite !== null) {
-            this.sprite = gameWorld.phaserGame.add.sprite(x, y, this.definition.sprite);
+            this.sprite = new Phaser.Sprite(gameWorld.phaserGame, x, y, this.definition.sprite);
         }
 
         // Initialize the object's collision
         if (this.definition.collision !== null) {
             if (this.definition.collision.verticies !== null) {
                 this.rigidBody = Matter.Bodies.fromVertices(x, y, Matter.Vertices.create(this.definition.collision.verticies));
-                Matter.World.add(gameWorld.physics.engine.world, this.rigidBody);
             }
 
             // Adjust the anchor of the sprite to the center of mass of the collision body
@@ -61,7 +60,7 @@ class GameObject {
         let localPos = rotationMatrix.applyInverse(transformPos);
 
         // Apply the sprite's offset to the local position
-        localPos.add(Game.rock.sprite.offsetX, Game.rock.sprite.offsetY);
+        localPos.add(this.sprite.offsetX, this.sprite.offsetY);
 
         // Return the final local position
         return localPos;
