@@ -53,6 +53,11 @@ class GameWorld {
     render() {
         // Allow the physics sim to render anything it needs to
         this.physicsWorld.render();
+
+        // Render all the objects
+        for (let objectIdx = 0; objectIdx < this.gameObjects.length; objectIdx++) {
+            this.gameObjects[objectIdx].render();
+        }
     }
 
     /** 

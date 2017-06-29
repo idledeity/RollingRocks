@@ -11,6 +11,8 @@ class GameObject {
      * @param {*} y - The Y coordinate where the object should be created
      */
     constructor(jsonFile, gameWorld, x, y) {
+        this.gameWorld = gameWorld;
+        
         // Load the object's JSON definition
         this.definition = gameWorld.phaserGame.cache.getJSON(jsonFile);
 
@@ -39,9 +41,18 @@ class GameObject {
      */
     update() {
         // Update the sprite's transform to follow the physic's rigid body transform
-        this.sprite.x = this.rigidBody.position.x;
-        this.sprite.y = this.rigidBody.position.y;
-        this.sprite.rotation = this.rigidBody.angle;
+        if (this.rigidBody !== null) {
+            this.sprite.x = this.rigidBody.position.x;
+            this.sprite.y = this.rigidBody.position.y;
+            this.sprite.rotation = this.rigidBody.angle;
+        }
+    }
+
+    /**
+     * Per frame render function for any post render effects
+     */
+    render() {
+        // Nothing to do
     }
 
     /**
