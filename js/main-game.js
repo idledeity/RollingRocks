@@ -21,6 +21,9 @@ class MainGame {
         // Let the game world do any necessary preloading
         this.gameWorld.preload();
 
+        // Load the world
+        this.phaserGame.load.pack('test-world1', 'assets/packs/test-world1.json', null, this);
+
         // Load the rock assets
         this.phaserGame.load.pack('rock', 'assets/packs/rock.json', null, this);
     }
@@ -33,11 +36,7 @@ class MainGame {
         this.phaserGame.stage.backgroundColor = "#4488AA";
         
         // Create the gameworld
-        this.gameWorld.create();
-
-        // Create a static physics shape for the ground
-        this.ground = Matter.Bodies.rectangle(500, 800, 8100, 600, { isStatic: true });
-        this.gameWorld.getPhysicsWorld().addBody(this.ground);
+        this.gameWorld.create('worlds/test-world1.json');
 
         // Create the rock
         this.rock = new Rock("objects/rock.json", this, 50, 50);

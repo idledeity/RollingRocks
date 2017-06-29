@@ -30,8 +30,35 @@ class GameWorld {
     /**
      * Called after preload() once assets have been loaded and before the main update/render functions for any asset dependent initialization
      */
-    create() {
+    create(jsonFile) {
+        // Create the physics world
         this.physicsWorld.create(this.phaserGame.canvas, this.phaserGame.context, this.worldWidth, this.worldHeight);
+
+        // Load the object's JSON definition
+        this.definition = this.phaserGame.cache.getJSON(jsonFile);
+
+        // Add collision for the world heightfield, if there is one
+        if (this.definition.heightField !== null) {
+            // Iterate over each position in the heightfield
+            for (let pointIdx = 0; pointIdx < (this.definition.heightField.points.length - 1); pointIdx++) {
+                // Get the current and next points in the height field
+                let point1 = this.definition.heightField.points[pointIdx];
+                let point2 = this.definition.heightField.points[pointIdx + 1];
+
+                // Calculate the distance between the two points and the midway point so we can create a static rectangle collision body for this segment
+                let displacement = Matter.Vector.sub(point2, point1);
+                let magnitude = Matter.Vector.magnitude(displacement);
+                let midway = Matter.Vector.mult(Matter.Vector.add(point1, point2), 0.5);
+                let segmentCollision = Matter.Bodies.rectangle(midway.x, midway.y, magnitude, this.definition.heightField.thickness, { isStatic: true });
+
+                // Calculate the angle above the horizontal between the two point and use that to rotate the new collision for this segment
+                let angle = ((magnitude > 0.0) ? Math.asin(displacement.y / magnitude) : 0); // avoid DBZ
+                Matter.Body.rotate(segmentCollision, angle);
+
+                // Add the new segment collision to the physics world
+                this.physicsWorld.addBody(segmentCollision);
+            }
+        }
     }
 
     /**

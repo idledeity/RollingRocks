@@ -1,0 +1,10 @@
+{ 
+    "test-world1": [
+        {
+            "type": "json",
+            "key": "worlds/test-world1.json",
+            "url": "assets/worlds/test-world1.json",
+            "overwrite": false
+        }
+    ]
+}
