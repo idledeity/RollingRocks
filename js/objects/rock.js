@@ -11,9 +11,10 @@ class Rock extends GameObject {
 
     /**
      * Per frame update function for the object
+     * @param {Number} deltaTimeMS - The elapsed time from the previous simulation frame in milliseconds
      */
-    update() {
-        super.update();
+    update(deltaTimeMS) {
+        super.update(deltaTimeMS);
 
         // Update the force line if the rock has been clicked
         if (this.clicked) {

@@ -17,13 +17,13 @@ class GameObject {
         this.definition = gameWorld.game.phaser.cache.getJSON(jsonFile);
 
         // Initialize the object's sprite
-        if (this.definition.sprite !== null) {
+        if (this.definition.sprite != null) {
             this.sprite = new Phaser.Sprite(gameWorld.game.phaser, x, y, this.definition.sprite);
         }
 
         // Initialize the object's collision
-        if (this.definition.collision !== null) {
-            if (this.definition.collision.verticies !== null) {
+        if (this.definition.collision != null) {
+            if (this.definition.collision.verticies != null) {
                 this.rigidBody = Matter.Bodies.fromVertices(x, y, Matter.Vertices.create(this.definition.collision.verticies));
             }
 
@@ -38,10 +38,11 @@ class GameObject {
 
     /**
      * Per frame update function for the object
+     * @param {Number} deltaTimeMS - The elapsed time from the previous simulation frame in milliseconds
      */
-    update() {
+    update(deltaTimeMS) {
         // Update the sprite's transform to follow the physic's rigid body transform
-        if (this.rigidBody !== null) {
+        if (this.rigidBody != null) {
             this.sprite.x = this.rigidBody.position.x;
             this.sprite.y = this.rigidBody.position.y;
             this.sprite.rotation = this.rigidBody.angle;

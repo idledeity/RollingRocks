@@ -48,7 +48,8 @@ class MainGame {
         Matter.Body.setAngularVelocity(this.rock.rigidBody, 0.35);
 
         // Create the cammera
-        this.camera = new FreeCamera(this.gameWorld, 0, 0);
+        this.camera = new SpringCamera(this.gameWorld, 0, 0);
+        this.camera.setFollowTarget(this.rock);
     }
 
     /**
@@ -56,13 +57,13 @@ class MainGame {
      */
     update() {
         // Update the game world
-        this.gameWorld.update();
+        this.gameWorld.update(this.phaser.time.physicsElapsedMS);
 
         // Update the camera
-        this.camera.update();
+        this.camera.update(this.phaser.time.physicsElapsedMS);
         let cameraPos = this.camera.getPosition();
-        this.phaser.camera.x = cameraPos.x;
-        this.phaser.camera.y = cameraPos.y;
+        this.phaser.camera.x = cameraPos.x - this.phaser.width * 0.5;
+        this.phaser.camera.y = cameraPos.y - this.phaser.height * 0.5;
     }
 
     /**

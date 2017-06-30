@@ -18,8 +18,9 @@ class FreeCamera extends GameCamera {
 
     /**
      * Per-frame update for the camera
+     * @param {Number} deltaTimeMS - The elapsed time from the previous simulation frame in milliseconds
      */
-    update() {
+    update(deltaTimeMS) {
         super.update();
 
         // Process arrow key input to pan the camera

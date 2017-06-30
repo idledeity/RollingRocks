@@ -16,8 +16,9 @@ class GameCamera {
 
     /**
      * Per-frame update for the camera
+     * @param {Number} deltaTimeMS - The elapsed time from the previous simulation frame in milliseconds
      */
-    update() {
+    update(deltaTimeMS) {
         // Nothing to do
     }
 

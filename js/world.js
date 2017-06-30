@@ -38,7 +38,7 @@ class GameWorld {
         this.definition = this.game.phaser.cache.getJSON(jsonFile);
 
         // Add collision for the world heightfield, if there is one
-        if (this.definition.heightField !== null) {
+        if (this.definition.heightField != null) {
             // Iterate over each position in the heightfield
             for (let pointIdx = 0; pointIdx < (this.definition.heightField.points.length - 1); pointIdx++) {
                 // Get the current and next points in the height field
@@ -63,14 +63,15 @@ class GameWorld {
 
     /**
      * Update function called once each frame for any per-frame updating
+     * @param {Number} deltaTimeMS - The elapsed time from the previous simulation frame in milliseconds
      */
-    update() {
+    update(deltaTimeMS) {
         // Update the physics sim
-        this.physicsWorld.update(this.game.phaser.time.physicsElapsedMS);
+        this.physicsWorld.update();
 
         // Update all the objects
         for (let objectIdx = 0; objectIdx < this.gameObjects.length; objectIdx++) {
-            this.gameObjects[objectIdx].update();
+            this.gameObjects[objectIdx].update(deltaTimeMS);
         }
     }
 
@@ -98,7 +99,7 @@ class GameWorld {
         this.game.phaser.add.existing(gameObject.sprite);
 
         // If the game object has a rigid body, add that to the physics world
-        if (gameObject.rigidBody !== null) {
+        if (gameObject.rigidBody != null) {
             this.physicsWorld.addBody(gameObject.rigidBody);
         }
     }
