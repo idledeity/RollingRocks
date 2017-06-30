@@ -5,12 +5,12 @@
 class GameWorld {
     /**
      * Constructor
-     * @param {Phaser.Game} phaserGame - The Phaser Game instance
+     * @param {MainGame} game - The Game instance
      * @param {Number} worldWidth - The width of the game world
      * @param {Number} worldHeight - The height of the game world
      */
-    constructor(phaserGame, worldWidth, worldHeight) {
-        this.phaserGame = phaserGame;
+    constructor(game, worldWidth, worldHeight) {
+        this.game = game;
         this.worldWidth = worldWidth;
         this.worldHeight = worldHeight;
 
@@ -32,10 +32,10 @@ class GameWorld {
      */
     create(jsonFile) {
         // Create the physics world
-        this.physicsWorld.create(this.phaserGame.canvas, this.phaserGame.context, this.worldWidth, this.worldHeight);
+        this.physicsWorld.create(this.game.phaser.canvas, this.game.phaser.context, this.worldWidth, this.worldHeight);
 
         // Load the object's JSON definition
-        this.definition = this.phaserGame.cache.getJSON(jsonFile);
+        this.definition = this.game.phaser.cache.getJSON(jsonFile);
 
         // Add collision for the world heightfield, if there is one
         if (this.definition.heightField !== null) {
@@ -66,7 +66,7 @@ class GameWorld {
      */
     update() {
         // Update the physics sim
-        this.physicsWorld.update(this.phaserGame.time.physicsElapsedMS);
+        this.physicsWorld.update(this.game.phaser.time.physicsElapsedMS);
 
         // Update all the objects
         for (let objectIdx = 0; objectIdx < this.gameObjects.length; objectIdx++) {
@@ -79,7 +79,7 @@ class GameWorld {
      */
     render() {
         // Allow the physics sim to render anything it needs to
-        this.physicsWorld.render();
+        this.physicsWorld.render(this.game);
 
         // Render all the objects
         for (let objectIdx = 0; objectIdx < this.gameObjects.length; objectIdx++) {
@@ -95,7 +95,7 @@ class GameWorld {
         this.gameObjects.push(gameObject);
 
         // Add the sprite to the phaser game
-        this.phaserGame.add.existing(gameObject.sprite);
+        this.game.phaser.add.existing(gameObject.sprite);
 
         // If the game object has a rigid body, add that to the physics world
         if (gameObject.rigidBody !== null) {

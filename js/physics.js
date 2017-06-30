@@ -31,6 +31,7 @@ class GamePhysics {
                 width: worldWidth,
                 height: worldHeight,
                 clearCanvas: false,
+                hasBounds: true,
             }
         });
     }
@@ -47,7 +48,12 @@ class GamePhysics {
     /**
      * Render function called once each frame after update() to handle and post rendering
      */
-    render() {
+    render(game) {
+        this.debugRenderer.bounds = Matter.Bounds.create(Matter.Vertices.create([
+            { x: game.phaser.camera.x, y: game.phaser.camera.y },
+            { x: game.phaser.camera.x + game.phaser.width, y: game.phaser.camera.y + game.phaser.height }
+        ]));
+
         // Render the physics world as a post process step
         Matter.Render.world(this.debugRenderer);
     }

@@ -10,15 +10,15 @@ class GameObject {
      * @param {*} x - The X coordinate where the object should be created
      * @param {*} y - The Y coordinate where the object should be created
      */
-    constructor(jsonFile, gameWorld, x, y) {
+    constructor(jsonFile, gameWorld, x, y) { 
         this.gameWorld = gameWorld;
-        
+
         // Load the object's JSON definition
-        this.definition = gameWorld.phaserGame.cache.getJSON(jsonFile);
+        this.definition = gameWorld.game.phaser.cache.getJSON(jsonFile);
 
         // Initialize the object's sprite
         if (this.definition.sprite !== null) {
-            this.sprite = new Phaser.Sprite(gameWorld.phaserGame, x, y, this.definition.sprite);
+            this.sprite = new Phaser.Sprite(gameWorld.game.phaser, x, y, this.definition.sprite);
         }
 
         // Initialize the object's collision

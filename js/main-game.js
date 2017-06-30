@@ -5,13 +5,13 @@
 class MainGame {
     /**
      * Constructor
-     * @param {Phaser.Game} phaserGame - The Phaser game instnace
+     * @param {Phaser.Game} phaser - The Phaser game instnace
      */
-    constructor(phaserGame) {
-        this.phaserGame = phaserGame;
+    constructor(phaser) {
+        this.phaser = phaser;
 
         // Create a new game world
-        this.gameWorld = new GameWorld(phaserGame, 512, 600);
+        this.gameWorld = new GameWorld(this, 512, 600);
     }
 
     /**
@@ -22,10 +22,10 @@ class MainGame {
         this.gameWorld.preload();
 
         // Load the world
-        this.phaserGame.load.pack('test-world1', 'assets/packs/test-world1.json', null, this);
+        this.phaser.load.pack('test-world1', 'assets/packs/test-world1.json', null, this);
 
         // Load the rock assets
-        this.phaserGame.load.pack('rock', 'assets/packs/rock.json', null, this);
+        this.phaser.load.pack('rock', 'assets/packs/rock.json', null, this);
     }
 
     /**
@@ -33,17 +33,22 @@ class MainGame {
      */
     create() {
         // Set the background color on the canvas
-        this.phaserGame.stage.backgroundColor = "#4488AA";
+        this.phaser.stage.backgroundColor = "#4488AA";
         
+        this.phaser.world.setBounds(-2000, -2000, 4000, 4000);
+
         // Create the gameworld
         this.gameWorld.create('worlds/test-world1.json');
 
         // Create the rock
-        this.rock = new Rock("objects/rock.json", this, 50, 50);
+        this.rock = new Rock("objects/rock.json", this.gameWorld, 50, 50);
         this.gameWorld.addObject(this.rock);
         
         // Give the rock an initial kick to make things interesting
         Matter.Body.setAngularVelocity(this.rock.rigidBody, 0.35);
+
+        // Create the cammera
+        this.camera = new FreeCamera(this.gameWorld, 0, 0);
     }
 
     /**
@@ -51,7 +56,13 @@ class MainGame {
      */
     update() {
         // Update the game world
-        this.gameWorld.update();    
+        this.gameWorld.update();
+
+        // Update the camera
+        this.camera.update();
+        let cameraPos = this.camera.getPosition();
+        this.phaser.camera.x = cameraPos.x;
+        this.phaser.camera.y = cameraPos.y;
     }
 
     /**
@@ -62,5 +73,22 @@ class MainGame {
         this.gameWorld.render();
     }
 
+    /**
+     * Transform a point from the view coordinates to world coordinates
+     * @param {Phaser.Point} viewPosition - Point in view space
+     * @return {Phaser.Point} The point in world space
+     */
+    viewToWorld(viewPosition) {
+        return new Phaser.Point(viewPosition.x + this.phaser.camera.x, viewPosition.y + this.phaser.camera.y);
+    }
+
+    /**
+     * Transform a point from world coordinates to view coordinatess
+     * @param {Phaser.Point} worldPosition - Point in world space
+     * @return {Phaser.Point} The point in view space
+     */
+    worldToView(worldPosition) {
+        return new Phaser.Point(viewPosition.x - this.phaser.camera.x, viewPosition.y - this.phaser.camera.y);
+    }
 }
 
