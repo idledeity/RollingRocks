@@ -35,8 +35,6 @@ class MainGame {
         // Set the background color on the canvas
         this.phaser.stage.backgroundColor = "#4488AA";
         
-        this.phaser.world.setBounds(-2000, -2000, 4000, 4000);
-
         // Create the gameworld
         this.gameWorld.create('worlds/test-world1.json');
 
@@ -50,6 +48,8 @@ class MainGame {
         // Create the cammera
         this.camera = new SpringCamera(this.gameWorld, 0, 0);
         this.camera.setFollowTarget(this.rock);
+        this.camera.setOffset(new Phaser.Point(0, -100));
+        //this.camera = new FreeCamera(this.gameWorld, 0, 0);
     }
 
     /**
@@ -64,6 +64,9 @@ class MainGame {
         let cameraPos = this.camera.getPosition();
         this.phaser.camera.x = cameraPos.x - this.phaser.width * 0.5;
         this.phaser.camera.y = cameraPos.y - this.phaser.height * 0.5;
+
+        // Do the post update for the game world
+        this.gameWorld.updatePost(this.phaser.time.physicsElapsedMS);
     }
 
     /**

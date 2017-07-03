@@ -14,6 +14,7 @@ class FreeCamera extends GameCamera {
 
         // Create a cursor for accessing processing arrow key input
         this.cursors = gameWorld.game.phaser.input.keyboard.createCursorKeys();
+        this.moveSpeed = 20;
     }
 
     /**
@@ -26,19 +27,19 @@ class FreeCamera extends GameCamera {
         // Process arrow key input to pan the camera
         if (this.cursors.up.isDown)
         {
-            this.cameraPos.y -= 4;
+            this.cameraPos.y -= this.moveSpeed;
         }
         if (this.cursors.down.isDown)
         {
-            this.cameraPos.y += 4;
+            this.cameraPos.y += this.moveSpeed;
         }
         if (this.cursors.left.isDown)
         {
-            this.cameraPos.x -= 4;
+            this.cameraPos.x -= this.moveSpeed;
         }
         if (this.cursors.right.isDown)
         {
-            this.cameraPos.x += 4;
+            this.cameraPos.x += this.moveSpeed;
         }       
     }
 }

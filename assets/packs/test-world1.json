@@ -5,6 +5,60 @@
             "key": "worlds/test-world1.json",
             "url": "assets/worlds/test-world1.json",
             "overwrite": false
+        },
+        {
+            "type": "image",
+            "key": "sprites/scenery/mountains/mountain-01.png",
+            "url": "assets/sprites/scenery/mountains/mountain-01.png",
+            "overwrite": false
+        },
+        {
+            "type": "image",
+            "key": "sprites/scenery/mountains/mountain-02.png",
+            "url": "assets/sprites/scenery/mountains/mountain-02.png",
+            "overwrite": false
+        },
+        {
+            "type": "image",
+            "key": "sprites/scenery/mountains/mountain-03.png",
+            "url": "assets/sprites/scenery/mountains/mountain-03.png",
+            "overwrite": false
+        },
+        {
+            "type": "image",
+            "key": "sprites/scenery/water/water-01.png",
+            "url": "assets/sprites/scenery/water/water-01.png",
+            "overwrite": false
+        },
+        {
+            "type": "image",
+            "key": "sprites/scenery/water/water-02.png",
+            "url": "assets/sprites/scenery/water/water-02.png",
+            "overwrite": false
+        },
+        {
+            "type": "image",
+            "key": "sprites/scenery/shapes/rect-01.png",
+            "url": "assets/sprites/scenery/shapes/rect-01.png",
+            "overwrite": false
+        },
+        {
+            "type": "image",
+            "key": "sprites/scenery/shapes/rect-02.png",
+            "url": "assets/sprites/scenery/shapes/rect-02.png",
+            "overwrite": false
+        },
+        {
+            "type": "image",
+            "key": "sprites/scenery/shapes/rect1x1.png",
+            "url": "assets/sprites/scenery/shapes/rect1x1.png",
+            "overwrite": false           
+        },
+        {
+            "type": "image",
+            "key": "sprites/scenery/shapes/rect2x2.png",
+            "url": "assets/sprites/scenery/shapes/rect2x2.png",
+            "overwrite": false            
         }
     ]
 }

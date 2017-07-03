@@ -1,6 +1,6 @@
 
 /**
- * The spring camera uses a modified dampened spring simulation to attach a camera to a target object to follow
+ * The spring camera uses a modified dampened spring (spring-esque) simulation to attach a camera to a target object to follow
  */
 class SpringCamera extends GameCamera {
     /**
@@ -18,9 +18,10 @@ class SpringCamera extends GameCamera {
         this.springActivateSpeed = 0.1;      // if the camera speed is above this threshold, t he spring should be active
         this.maxFollowDistance = 150.0;      // the maximum distance the camera can get from the target 
         this.springConstant = 150;           // the spring constant (k) that controls the amount force the spring applied to the camera while active
-        this.dampeningConstant = 0.025;      // the dampening constant {w0} that controls the resistance of the camera to move providing a constant "slowing" force (aka friction)
+        this.dampeningConstant = 0.025;      // the dampening constant (w0) that controls the resistance of the camera to move providing a constant "slowing" force (aka friction)
 
         this.velocity = Matter.Vector.create(0, 0);
+        this.offset = Matter.Vector.create(0, 0);
     }
 
     /**
@@ -31,7 +32,8 @@ class SpringCamera extends GameCamera {
         // Update the camera to follow the target
         if (this.followTarget != null) {
             // Calculate the displacement, magnitude, and direction between the current camera position and the follow target position
-            let targetPos = Matter.Vector.clone(this.followTarget.rigidBody.position);
+            let targetPos = Matter.Vector.add(this.followTarget.rigidBody.position, this.offset);
+
             let displacement = Matter.Vector.sub(targetPos, this.cameraPos);
             let distance = Matter.Vector.magnitude(displacement);
             let direction = Matter.Vector.div(displacement, distance);
@@ -72,6 +74,9 @@ class SpringCamera extends GameCamera {
                 }
             }
         }
+
+        this.cameraPos.x = Math.floor(this.cameraPos.x);
+        this.cameraPos.y = Math.floor(this.cameraPos.y);
     }
 
     /**
@@ -80,5 +85,14 @@ class SpringCamera extends GameCamera {
      */
     setFollowTarget(gameObject) {
         this.followTarget = gameObject;
+    }
+
+    /**
+     * Sets the camera's offset from the follow target
+     * @param {Phaser.Point} offset - The desired camera offset from the follow target
+     */
+    setOffset(offset) {
+        this.offset.x = offset.x
+        this.offset.y = offset.y;
     }
 }

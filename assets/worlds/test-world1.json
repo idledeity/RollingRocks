@@ -1,4 +1,8 @@
 {
+    "extents": {
+        "min": { "x": -3000, "y": -2000 },
+        "max": { "x": 10000, "y": 2000 }
+    },
     "heightField": {
         "thickness": 2,
         "points": [
@@ -9,7 +13,146 @@
             { "x": 400, "y": 300 },
             { "x": 600, "y": 360 },
             { "x": 1000, "y": 365 },
-            { "x": 1500, "y": 450 }
+            { "x": 1500, "y": 450 },
+            { "x": 2500, "y": 300 },
+            { "x": 3000, "y": 350 },
+            { "x": 3250, "y": 425 },
+            { "x": 4000, "y": 500 },
+            { "x": 4500, "y": 400 }
+        ]
+    },
+    "background": {
+        "defaultDepth": 1.0,
+        "layers": [
+            {
+                "name": "mountain-01",    
+                "depth": 100.0,
+                "position": { "x": 0, "y": 0 },
+                "depthAffectsY": true,
+                "images": [
+                    {
+                        "sprite": "sprites/scenery/mountains/mountain-02.png",
+                        "offset": { "x": 150, "y": -250 },
+                        "scale": { "x": 1.0, "y": 1.0 }
+                    }
+                ]
+            },
+            {
+                "name": "water-01",    
+                "depth": 100.0,
+                "position": { "x": -1000, "y": -30 },
+                "depthAffectsY": true,
+                "type": "particle-field",
+                "width": 3000,
+                "height": 50,
+                "particleInfo": {
+                    "scaleXMin": 300,
+                    "scaleXMax": 1000,
+                    "scaleYMin": 2,
+                    "scaleYMax": 10,
+                    "displacementMultXMin": -0.025,
+                    "displacementMultXMax": 0.025,
+                    "displacementMultYMin": 0.0,
+                    "displacementMultYMax": 0.0,
+                    "coverage": 3.0,
+                    "colors": [ 
+                        "0x3178bd", "0x5597db", "0x5597db", "0x3d8bec", "0x2971c7", 
+                        "0x6060e3", "0x3178bd", "0x3966cc"
+                    ],
+                    "images": [ "sprites/scenery/shapes/rect1x1.png" ]
+                }
+            },
+            {
+                "name": "water-02",    
+                "depth": 100.0,
+                "position": { "x": -1000, "y": 10 },
+                "depthAffectsY": true,
+                "type": "particle-field",
+                "width": 3000,
+                "height": 50,
+                "particleInfo": {
+                    "scaleXMin": 300,
+                    "scaleXMax": 1000,
+                    "scaleYMin": 2,
+                    "scaleYMax": 10,
+                    "displacementMultXMin": -0.025,
+                    "displacementMultXMax": 0.025,
+                    "displacementMultYMin": 0.0,
+                    "displacementMultYMax": 0.0,
+                    "coverage": 3.0,
+                    "colors": [ 
+                        "0x3178bd", "0x3178bd", "0x5597db", "0x5597db", "0x3d8bec",
+                        "0x2971c7", "0x2971c7", "0x3966cc", "0x19e3f2"
+                    ],
+                    "images": [ "sprites/scenery/shapes/rect1x1.png" ]
+                }
+            },
+            {
+                "name": "mountain-02",    
+                "depth": 100.0,
+                "position": { "x": 0, "y": 0 },
+                "depthAffectsY": true,
+                "images": [         
+                    {
+                        "sprite": "sprites/scenery/mountains/mountain-03.png",
+                        "offset": { "x": 575 , "y": -200 },
+                        "scale": { "x": 1.0, "y": 1.0 }
+                    },
+                    {
+                        "sprite": "sprites/scenery/mountains/mountain-01.png",
+                        "offset": { "x": -300, "y": -200 },
+                        "scale": { "x": 1.0, "y": 1.0 }
+                    }
+                ]
+            },
+            {
+                "name": "grass-01",    
+                "depth": 80.0,
+                "position": { "x": -1000, "y": 40 },
+                "depthAffectsY": true,
+                "type": "particle-field",
+                "width": 3000,
+                "height": 70,
+                "particleInfo": {
+                    "scaleXMin": 300,
+                    "scaleXMax": 1000,
+                    "scaleYMin": 4,
+                    "scaleYMax": 15,
+                    "displacementMultXMin": -0.05,
+                    "displacementMultXMax": 0.05,
+                    "displacementMultYMin": 0.0,
+                    "displacementMultYMax": 0.0,
+                    "coverage": 3.0,
+                    "colors": [ 
+                        "0x1eaf4f", "0x22cc2c", "0x46f411", "0x19f244"
+                    ],
+                    "images": [ "sprites/scenery/shapes/rect1x1.png" ]
+                }
+            },
+            {
+                "name": "grass-02",    
+                "depth": 60.0,
+                "position": { "x": -1000, "y": 100 },
+                "depthAffectsY": true,
+                "type": "particle-field",
+                "width": 3000,
+                "height": 150,
+                "particleInfo": {
+                    "scaleXMin": 300,
+                    "scaleXMax": 1000,
+                    "scaleYMin": 5,
+                    "scaleYMax": 25,
+                    "displacementMultXMin": -0.05,
+                    "displacementMultXMax": 0.05,
+                    "displacementMultYMin": 0.0,
+                    "displacementMultYMax": 0.0,
+                    "coverage": 3.0,
+                    "colors": [ 
+                        "0x1eaf4f", "0x22cc2c", "0x46f411", "0x19f244", "0x8cdb13"
+                    ],
+                    "images": [ "sprites/scenery/shapes/rect1x1.png" ]
+                }
+            }
         ]
     }
 }

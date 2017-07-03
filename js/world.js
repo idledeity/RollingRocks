@@ -37,6 +37,31 @@ class GameWorld {
         // Load the object's JSON definition
         this.definition = this.game.phaser.cache.getJSON(jsonFile);
 
+        // Set the world extents
+        this.game.phaser.world.setBounds(this.definition.extents.min.x, this.definition.extents.min.y, this.definition.extents.max.x, this.definition.extents.max.x);
+
+        // Create the world background layers
+        this.background = {};
+        this.background.layers = [];
+        if (this.definition.background != null) {
+            this.background.defaultDepth = this.definition.background.defaultDepth;
+            if (this.definition.background.layers) {
+                for (let layerIdx = 0; layerIdx < this.definition.background.layers.length; layerIdx++) {
+                    let layerDefinition = this.definition.background.layers[layerIdx];
+                    
+                    // Create the layer
+                    let layer = null;
+                    if (layerDefinition.type === "particle-field") {
+                        layer = new ParticleField(this, layerDefinition);
+                    } else {
+                        layer = new Layer(this, layerDefinition);
+                    }
+
+                    this.background.layers.push(layer);
+                }
+            }
+        }
+        
         // Add collision for the world heightfield, if there is one
         if (this.definition.heightField != null) {
             // Iterate over each position in the heightfield
@@ -72,6 +97,15 @@ class GameWorld {
         // Update all the objects
         for (let objectIdx = 0; objectIdx < this.gameObjects.length; objectIdx++) {
             this.gameObjects[objectIdx].update(deltaTimeMS);
+        }
+    }
+
+    /**
+     * Update function called once each frame after the camera has been processed
+     */
+    updatePost() {
+        for (let layerIdx = 0; layerIdx < this.definition.background.layers.length; layerIdx++) {
+            this.background.layers[layerIdx].update();
         }
     }
 
