@@ -4,7 +4,9 @@
         "max": { "x": 10000, "y": 2000 }
     },
     "heightField": {
-        "thickness": 2,
+        "thickness": 5,
+        "image": "sprites/scenery/ground/ground-01.png",
+        "fillColor": "0x493614",
         "points": [
             { "x": -500, "y": 400 },
             { "x": -200, "y": 350 },
@@ -25,7 +27,7 @@
         "defaultDepth": 1.0,
         "layers": [
             {
-                "name": "mountain-01",    
+                "name": "mountain-01",
                 "depth": 100.0,
                 "position": { "x": 0, "y": 0 },
                 "depthAffectsY": true,
@@ -38,7 +40,7 @@
                 ]
             },
             {
-                "name": "water-01",    
+                "name": "water-01",
                 "depth": 100.0,
                 "position": { "x": -1000, "y": -30 },
                 "depthAffectsY": true,
@@ -55,15 +57,15 @@
                     "displacementMultYMin": 0.0,
                     "displacementMultYMax": 0.0,
                     "coverage": 3.0,
-                    "colors": [ 
-                        "0x3178bd", "0x5597db", "0x5597db", "0x3d8bec", "0x2971c7", 
+                    "colors": [
+                        "0x3178bd", "0x5597db", "0x5597db", "0x3d8bec", "0x2971c7",
                         "0x6060e3", "0x3178bd", "0x3966cc"
                     ],
                     "images": [ "sprites/scenery/shapes/rect1x1.png" ]
                 }
             },
             {
-                "name": "water-02",    
+                "name": "water-02",
                 "depth": 100.0,
                 "position": { "x": -1000, "y": 10 },
                 "depthAffectsY": true,
@@ -80,7 +82,7 @@
                     "displacementMultYMin": 0.0,
                     "displacementMultYMax": 0.0,
                     "coverage": 3.0,
-                    "colors": [ 
+                    "colors": [
                         "0x3178bd", "0x3178bd", "0x5597db", "0x5597db", "0x3d8bec",
                         "0x2971c7", "0x2971c7", "0x3966cc", "0x19e3f2"
                     ],
@@ -88,11 +90,11 @@
                 }
             },
             {
-                "name": "mountain-02",    
+                "name": "mountain-02",
                 "depth": 100.0,
                 "position": { "x": 0, "y": 0 },
                 "depthAffectsY": true,
-                "images": [         
+                "images": [
                     {
                         "sprite": "sprites/scenery/mountains/mountain-03.png",
                         "offset": { "x": 575 , "y": -200 },
@@ -106,7 +108,7 @@
                 ]
             },
             {
-                "name": "grass-01",    
+                "name": "grass-01",
                 "depth": 80.0,
                 "position": { "x": -1000, "y": 40 },
                 "depthAffectsY": true,
@@ -123,14 +125,14 @@
                     "displacementMultYMin": 0.0,
                     "displacementMultYMax": 0.0,
                     "coverage": 3.0,
-                    "colors": [ 
+                    "colors": [
                         "0x1eaf4f", "0x22cc2c", "0x46f411", "0x19f244"
                     ],
                     "images": [ "sprites/scenery/shapes/rect1x1.png" ]
                 }
             },
             {
-                "name": "grass-02",    
+                "name": "grass-02",
                 "depth": 60.0,
                 "position": { "x": -1000, "y": 100 },
                 "depthAffectsY": true,
@@ -147,7 +149,7 @@
                     "displacementMultYMin": 0.0,
                     "displacementMultYMax": 0.0,
                     "coverage": 3.0,
-                    "colors": [ 
+                    "colors": [
                         "0x1eaf4f", "0x22cc2c", "0x46f411", "0x19f244", "0x8cdb13"
                     ],
                     "images": [ "sprites/scenery/shapes/rect1x1.png" ]

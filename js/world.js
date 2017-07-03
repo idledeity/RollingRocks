@@ -38,7 +38,9 @@ class GameWorld {
         this.definition = this.game.phaser.cache.getJSON(jsonFile);
 
         // Set the world extents
-        this.game.phaser.world.setBounds(this.definition.extents.min.x, this.definition.extents.min.y, this.definition.extents.max.x, this.definition.extents.max.x);
+        let width = this.definition.extents.max.x - this.definition.extents.min.x;
+        let height = this.definition.extents.max.y - this.definition.extents.min.y;
+        this.game.phaser.world.setBounds(this.definition.extents.min.x, this.definition.extents.min.y, width, height);
 
         // Create the world background layers
         this.background = {};
@@ -48,7 +50,7 @@ class GameWorld {
             if (this.definition.background.layers) {
                 for (let layerIdx = 0; layerIdx < this.definition.background.layers.length; layerIdx++) {
                     let layerDefinition = this.definition.background.layers[layerIdx];
-                    
+
                     // Create the layer
                     let layer = null;
                     if (layerDefinition.type === "particle-field") {
@@ -61,9 +63,20 @@ class GameWorld {
                 }
             }
         }
-        
-        // Add collision for the world heightfield, if there is one
-        if (this.definition.heightField != null) {
+
+
+
+
+        // Create the height field
+        if (this.definition.heightField != null && this.definition.heightField.points.length >= 2) {
+            let fillColor = parseInt(this.definition.heightField.fillColor);
+
+            var graphics = this.game.phaser.add.graphics(0, 0);
+            graphics.beginFill(fillColor);
+            graphics.lineStyle(1, fillColor, 1);
+            graphics.moveTo(this.definition.heightField.points[0].x, this.definition.extents.max.y);
+            graphics.lineTo(this.definition.heightField.points[0].x, this.definition.heightField.points[0].y);
+
             // Iterate over each position in the heightfield
             for (let pointIdx = 0; pointIdx < (this.definition.heightField.points.length - 1); pointIdx++) {
                 // Get the current and next points in the height field
@@ -82,7 +95,23 @@ class GameWorld {
 
                 // Add the new segment collision to the physics world
                 this.physicsWorld.addBody(segmentCollision);
+
+                // Create a sprite for this segment
+                let image = this.game.phaser.add.sprite(midway.x, midway.y, this.definition.heightField.image);
+                image.scale.setTo(magnitude, 1);
+                image.anchor.setTo(0.5, 0.5);
+                image.rotation = angle;
+                if (this.definition.heightField.tint) {
+                    image.tint = parseInt(this.definition.heightField.tint);
+                }
+
+                graphics.lineTo(point2.x, point2.y);
             }
+
+            graphics.lineTo(this.definition.heightField.points[this.definition.heightField.points.length - 1].x, this.definition.extents.max.y);
+            graphics.lineTo(this.definition.heightField.points[0].x, this.definition.extents.max.y);
+
+            graphics.endFill();
         }
     }
 
@@ -122,7 +151,7 @@ class GameWorld {
         }
     }
 
-    /** 
+    /**
      * Adds a new game object to the game world
      * @param {GameObject} gameObject - The new game object to add to the world
      */

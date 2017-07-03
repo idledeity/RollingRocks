@@ -1,4 +1,4 @@
-{ 
+{
     "test-world1": [
         {
             "type": "json",
@@ -52,13 +52,19 @@
             "type": "image",
             "key": "sprites/scenery/shapes/rect1x1.png",
             "url": "assets/sprites/scenery/shapes/rect1x1.png",
-            "overwrite": false           
+            "overwrite": false
         },
         {
             "type": "image",
             "key": "sprites/scenery/shapes/rect2x2.png",
             "url": "assets/sprites/scenery/shapes/rect2x2.png",
-            "overwrite": false            
+            "overwrite": false
+        },
+        {
+            "type": "image",
+            "key": "sprites/scenery/ground/ground-01.png",
+            "url": "assets/sprites/scenery/ground/ground-01.png",
+            "overwrite": false
         }
     ]
 }

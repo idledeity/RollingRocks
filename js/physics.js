@@ -31,9 +31,11 @@ class GamePhysics {
                 width: worldWidth,
                 height: worldHeight,
                 clearCanvas: false,
+                wireframes: false,
                 hasBounds: true,
             }
         });
+        this.debugRenderEnabled = false;
     }
 
     /**
@@ -49,20 +51,40 @@ class GamePhysics {
      * Render function called once each frame after update() to handle and post rendering
      */
     render(game) {
-        this.debugRenderer.bounds = Matter.Bounds.create(Matter.Vertices.create([
-            { x: game.phaser.camera.x, y: game.phaser.camera.y },
-            { x: game.phaser.camera.x + game.phaser.width, y: game.phaser.camera.y + game.phaser.height }
-        ]));
+        // Hadle rendering the physics debug rendering if enabled
+        if (this.debugRenderEnabled) {
+            // Update the bounds for the debug rendered based on the current camera position
+            this.debugRenderer.bounds = Matter.Bounds.create(Matter.Vertices.create([
+                { x: game.phaser.camera.x, y: game.phaser.camera.y },
+                { x: game.phaser.camera.x + game.phaser.width, y: game.phaser.camera.y + game.phaser.height }
+            ]));
 
-        // Render the physics world as a post process step
-        Matter.Render.world(this.debugRenderer);
+            // Render the physics world as a post process step
+            Matter.Render.world(this.debugRenderer);
+        }
     }
 
     /**
      * Adds a new matter-js physics body to the world
-     * @param {Matter.Body} body - The new matter-js physics body to add to the physics world 
+     * @param {Matter.Body} body - The new matter-js physics body to add to the physics world
      */
     addBody(body) {
         Matter.World.add(this.physicsEngine.world, body);
+    }
+
+    /**
+     * Returns whether or not the physics debug render is enabled
+     * @return {Boolean} True if the debug render is enabled, False if it is not
+     */
+    getDebugRenderEnabled() {
+        return this.debugRenderEnabled;
+    }
+
+    /**
+     * Sets the physics debug render to enabled or disabled
+     * @param {Boolean} enabled - Whether the physics debug render should be enabled
+     */
+    setDebugRenderEnabled(enabled) {
+        this.debugRenderEnabled = enabled;
     }
 }

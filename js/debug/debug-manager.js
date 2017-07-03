@@ -11,7 +11,8 @@ class DebugManager {
         this.game = game;
 
         this.showFPS = true;
-        this.flyCamEnabled = false;
+        this.flyCamEnabled = true;
+        this.showCameraPosition = true;
     }
 
     /**
@@ -26,10 +27,13 @@ class DebugManager {
      * Called after preload() once assets have been loaded and before the main update/render functions for any asset dependent initialization
      */
     create() {
-        console.log(this.game.phaser.input);
+        // Register a key for toggling the fly camera
+        this.toggleFlyCamButton = this.game.phaser.input.keyboard.addKey(Phaser.Keyboard.F);
+        this.toggleFlyCamButton.onDown.add(this.toggleFlyCam, this);
 
-        this.toggleFlyCamKey = this.game.phaser.input.keyboard.addKey(Phaser.Keyboard.F);
-        this.toggleFlyCamKey.onDown.add(this.toggleFlyCam, this);
+        // Register a key for toggling physics debug rendering
+        this.togglePhysicsDebugButton = this.game.phaser.input.keyboard.addKey(Phaser.Keyboard.P);
+        this.togglePhysicsDebugButton.onDown.add(this.togglePhysicsDebug, this);
     }
 
     /**
@@ -44,10 +48,22 @@ class DebugManager {
      * Render function called once each frame after update() to handle and post rendering
      */
     render() {
+        let lineStartY = 20;
+        let lineHeight = 20;
+
         // Display the FPS (frames per second)
         if (this.showFPS) {
             let text =  "FPS: " + parseFloat(1000 / this.game.phaser.time.elapsedMS).toFixed(1);
-            this.game.phaser.debug.text(text, 10, 20, "#ffffff" );
+            this.game.phaser.debug.text(text, 10, lineStartY, "#ffffff" );
+            lineStartY = lineStartY + lineHeight;
+        }
+
+        // Display the FPS (frames per second)
+        if (this.showCameraPosition) {
+            let cameraPosition = this.game.getActiveCamera().getPosition();
+            let text =  "Camera Position: (" + parseFloat(cameraPosition.x).toFixed(2) + ", " + parseFloat(cameraPosition.y).toFixed(2) + ")";
+            this.game.phaser.debug.text(text, 10, lineStartY, "#ffffff" );
+            lineStartY = lineStartY + lineHeight;
         }
     }
 
@@ -86,5 +102,12 @@ class DebugManager {
     toggleFlyCam() {
         // Toggle the fly camera
         this.flyCamSetEnabled(!this.flyCamEnabled);
+    }
+
+    /**
+     * Toggles the physics world debug rendering
+     */
+    togglePhysicsDebug() {
+        this.game.getWorld().getPhysicsWorld().setDebugRenderEnabled(!this.game.getWorld().getPhysicsWorld().getDebugRenderEnabled());
     }
 }
