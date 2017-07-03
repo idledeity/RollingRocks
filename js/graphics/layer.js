@@ -1,5 +1,5 @@
 
-/** 
+/**
  * The Layer class is a lightweight wrapper around a Phaser.Group object, and manages a single graphics layer
  */
 class Layer {
@@ -50,11 +50,11 @@ class Layer {
      */
     update() {
         // Get the camera position
-        let cameraPos = this.gameWorld.game.camera.getPosition();
+        let cameraPos = this.gameWorld.game.getActiveCamera().getPosition();
 
         // Adjust the group's X coordinate base
         this.group.x = (this.definition.position.x + (cameraPos.x * (1.0 - this.scale)));
-        
+
         if (this.definition.depthAffectsY) {
             this.group.y = (this.definition.position.y + (cameraPos.y * (1.0 - this.scale)));
         }
