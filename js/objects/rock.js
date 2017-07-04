@@ -77,7 +77,7 @@ class Rock extends GameObject {
 
         // Generate a force from the clicked position and the current cursor position
         let force = Phaser.Point.subtract(pointerWorldPos, clickedWorldPos);
-        force.divide(1000, 1000); // scale the force
+        force.divide(500, 500); // scale the force
         Matter.Body.applyForce(this.rigidBody, clickedWorldPos, force);
 
         // Clear the rock clicked flag and force line

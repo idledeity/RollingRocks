@@ -1,9 +1,9 @@
-{ 
+{
     "rock": [
         {
             "type": "image",
-            "key": "sprites/rock.png",
-            "url": "assets/sprites/rock.png",
+            "key": "sprites/objects/rock.png",
+            "url": "assets/sprites/objects/rock.png",
             "overwrite": false
         },
         {

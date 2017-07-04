@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="59.715839mm"
+   height="42.676029mm"
+   viewBox="0 0 211.59156 151.21428"
+   id="svg8247"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="rock.svg"
+   inkscape:export-filename="D:\projects\rollingrocks\assets\sprites\objects\rock.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs8249">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 38.000001 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="104 : 38.000001 : 1"
+       inkscape:persp3d-origin="52.000002 : 25.333334 : 1"
+       id="perspective8837" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="-93.273232"
+     inkscape:cy="-36.624457"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showborder="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1600"
+     inkscape:window-height="837"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata8252">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-203.16138,-702.96455)">
+    <image
+       y="746.50507"
+       x="486.57144"
+       id="image8803"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGgAAABMCAYAAACBIfKBAAABY0lEQVR4nO3bWxKCMBBE0WCx/y3j
+F1XGUgzkMTd4zwIEaZoBiUuazxa03SVio4+IjapcyFlx0ntjovb5W3O77o8NgotsUOksobe8a8Nt
+ENzIs5MyS3rbv2eT72eD4NaGn/Vrpty1MV3ZILgWDWp6zVXOBsHVNMjmDGCD4AwIzoDgrswgZ89A
+NuhGthT3NnNGTY6XDYIzIDgDgiu5i/OuLZANgmv5Pki5/YpTdQWyQXAGBGdAcM6g/qpmkQ2Cs0Hj
+XGqSDYKzQeOdapINmpjvf8Y4PM42CM4ZFO9wJtkgOAOCM6AJefcWKzv+NgjOgOAMCM6A4AwI7vWp
+1fVvLFtKNgjPgOAMCM6A4AwIzoDgDAhuTT7/oNkgOAOCMyA4A4IzIDgDgjMgOFeW8mTPpTYIzgZx
+uDZ7RjYo3uFvoTYIjrCq59/Xgfsf1ZlFziDfQxWwQXAGBGdAcJ+u/6Puqpw9BWwQ3BM5lCeiufkY
+wgAAAABJRU5ErkJggg==
+"
+       preserveAspectRatio="none"
+       height="76"
+       width="104" />
+    <path
+       style="fill:#878d88;fill-opacity:1;fill-rule:evenodd;stroke:#3a3d3a;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 262.89598,852.67883 -53.92858,0 -4.28572,-20.35714 6.06988,-46.81966 c 6.95304,-25.45448 12.89892,-47.75306 35.71584,-69.96606 l 47.14286,-11.07142 56.42858,0 c 34.14062,15.34532 18.43874,19.76014 31.25,52.5 l 23.35696,21.66316 c 15.24672,16.89662 5.89242,31.74978 4.50018,45.83684 -1.39224,14.08706 -8.05832,16.1244 -16.42858,16.42856 l -130.35714,0 z"
+       id="path8806"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccczccc"
+       inkscape:export-filename="D:\projects\rollingrocks\assets\sprites\objects\rock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="opacity:1;fill:#4c5372;fill-opacity:0.28488375;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.66666667"
+       id="rect9073"
+       width="8.0251265"
+       height="37.389088"
+       x="330.13623"
+       y="707.17883" />
+    <rect
+       style="opacity:1;fill:#1d1e1d;fill-opacity:0.67441861;stroke:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect8808"
+       width="33.587612"
+       height="4.5457559"
+       x="228.00185"
+       y="837.39661"
+       inkscape:export-filename="D:\projects\rollingrocks\assets\sprites\objects\rock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="opacity:1;fill:#626762;fill-opacity:0.77906979;stroke:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect8815"
+       width="22.349625"
+       height="1.5152289"
+       x="241.1338"
+       y="838.2804"
+       inkscape:export-filename="D:\projects\rollingrocks\assets\sprites\objects\rock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="opacity:1;fill:#434643;fill-opacity:0.66860465;stroke:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect8833"
+       width="25.75889"
+       height="6.5659914"
+       x="208.05135"
+       y="836.26013"
+       inkscape:export-filename="D:\projects\rollingrocks\assets\sprites\objects\rock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:0.46511631;stroke:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect8810"
+       width="28.031733"
+       height="1.5783633"
+       x="206.97804"
+       y="838.84863"
+       inkscape:export-filename="D:\projects\rollingrocks\assets\sprites\objects\rock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#091815;fill-opacity:0.7093023;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 261.348,851.37063 -0.38616,-11.08734 -4.92024,10.90876 z"
+       id="path8835"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="D:\projects\rollingrocks\assets\sprites\objects\rock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="opacity:1;fill:#091815;fill-opacity:0.7093023;stroke:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect8853"
+       width="39.648487"
+       height="0.75761443"
+       x="207.54628"
+       y="844.21509"
+       inkscape:export-filename="D:\projects\rollingrocks\assets\sprites\objects\rock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="opacity:1;fill:#6d716d;fill-opacity:0.66666667;stroke:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect8855"
+       width="84.949234"
+       height="9.9529552"
+       x="238.99068"
+       y="827.36816"
+       inkscape:export-filename="D:\projects\rollingrocks\assets\sprites\objects\rock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="opacity:1;fill:#2e312e;fill-opacity:0.66666667;stroke:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect8857"
+       width="56.07143"
+       height="4.6428571"
+       x="259.47559"
+       y="835.5824"
+       inkscape:export-filename="D:\projects\rollingrocks\assets\sprites\objects\rock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="opacity:1;fill:#a1a8a1;fill-opacity:0.68023257;stroke:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect8859"
+       width="59.285732"
+       height="16.071377"
+       x="206.4399"
+       y="818.79663"
+       inkscape:export-filename="D:\projects\rollingrocks\assets\sprites\objects\rock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#4b4f4b;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.66666667"
+       d="m 352.50316,838.91179 -10.73288,-10.73286 0,-28.41054 20.13992,-20.13992 13.57394,0 13.28982,-13.28982"
+       id="path8863"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="D:\projects\rollingrocks\assets\sprites\objects\rock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#555a55;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.66666667"
+       d="m 328.55398,840.37599 0.187,-28.56742 4.95806,-5.66832 -0.1968,-9.81464 24.84846,-24.11452 14.01586,0 11.8693,-11.8693"
+       id="path8865"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:export-filename="D:\projects\rollingrocks\assets\sprites\objects\rock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#242624;stroke-width:1.99999988;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.66666667"
+       d="M 378.32564,759.88461 366.51078,716.66595"
+       id="path8869-7"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="D:\projects\rollingrocks\assets\sprites\objects\rock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="opacity:1;fill:#7b847b;fill-opacity:0.68023257;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.66666667"
+       id="rect8888"
+       width="18.5"
+       height="60.634773"
+       x="338.40417"
+       y="708.47522"
+       inkscape:export-filename="D:\projects\rollingrocks\assets\sprites\objects\rock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="opacity:1;fill:#a9afa9;fill-opacity:0.28488375;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.66666667"
+       id="rect8886"
+       width="9"
+       height="52"
+       x="350.26508"
+       y="712.01807"
+       inkscape:export-filename="D:\projects\rollingrocks\assets\sprites\objects\rock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#464946;stroke-width:3.99999976;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.66666667"
+       d="m 374.9732,762.72787 -9.90996,-36.74136"
+       id="path8869"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="D:\projects\rollingrocks\assets\sprites\objects\rock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="opacity:1;fill:#a6ada6;fill-opacity:0.45930236;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.66666667"
+       id="rect8890"
+       width="71.5"
+       height="39.5"
+       x="275.15417"
+       y="709.72522"
+       inkscape:export-filename="D:\projects\rollingrocks\assets\sprites\objects\rock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#525a52;fill-opacity:0.43023299;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 247.34628,717.59247 33.94112,-7.07106 -9.19238,52.3259 z"
+       id="path8892"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="D:\projects\rollingrocks\assets\sprites\objects\rock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#646964;stroke-width:6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.66666667"
+       d="m 405.37142,787.48461 -14.79184,54.16316"
+       id="path8894-8"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="D:\projects\rollingrocks\assets\sprites\objects\rock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#292a29;stroke-width:8;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.55232562"
+       d="M 407.40428,796.99957 396.4041,838.63989"
+       id="path8894-8-3"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="D:\projects\rollingrocks\assets\sprites\objects\rock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#767e76;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.66666667"
+       d="m 395.66966,788.69941 -12.93818,48.43018"
+       id="path8894-8-9"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="D:\projects\rollingrocks\assets\sprites\objects\rock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#e3e5e3;stroke-width:2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.66666667"
+       d="m 401.56716,781.54745 -14.93778,54.9671"
+       id="path8894"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="D:\projects\rollingrocks\assets\sprites\objects\rock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#6e6774;stroke-width:20.00000191;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.65697674"
+       d="M 282.91048,712.15883 268.6047,762.47009"
+       id="path8941"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="D:\projects\rollingrocks\assets\sprites\objects\rock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="opacity:1;fill:#bdbfbd;fill-opacity:0.29651166;stroke:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect8855-6-7"
+       width="81.009895"
+       height="14.136515"
+       x="230.28151"
+       y="794.6698"
+       inkscape:export-filename="D:\projects\rollingrocks\assets\sprites\objects\rock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="opacity:1;fill:#6d716d;fill-opacity:0.66666667;stroke:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect8855-0"
+       width="95.202286"
+       height="15.256256"
+       x="220.12471"
+       y="799.77026"
+       inkscape:export-filename="D:\projects\rollingrocks\assets\sprites\objects\rock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="opacity:1;fill:#b2cdb5;fill-opacity:0.41279069;stroke:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect8855-6"
+       width="69.414154"
+       height="6.4529552"
+       x="260.04065"
+       y="789.23047"
+       inkscape:export-filename="D:\projects\rollingrocks\assets\sprites\objects\rock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#bec1be;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.66666667"
+       d="m 332.20136,838.06905 0.008,-24.94662 5.03814,-5.61264 -0.0442,-9.62168 22.78536,-22.33586 13.76146,0 11.33032,-11.41198"
+       id="path8863-6"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:export-filename="D:\projects\rollingrocks\assets\sprites\objects\rock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="opacity:1;fill:#e9e9e9;fill-opacity:0.4534884;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.66666667"
+       id="rect8994"
+       width="40.591892"
+       height="30.931028"
+       x="226.14345"
+       y="744.51343"
+       inkscape:export-filename="D:\projects\rollingrocks\assets\sprites\objects\rock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="opacity:1;fill:#748b80;fill-opacity:0.52906979;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.66666667"
+       id="rect9075"
+       width="50.91169"
+       height="9.3691645"
+       x="271.57397"
+       y="746.16821" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#303530;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.45882353"
+       d="m 209.27032,809.23565 28.5228,-27.9894 54.86108,0 38.13586,-36.74322 -0.0518,-32.17866 6.5625,-6.7173"
+       id="path8996"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="D:\projects\rollingrocks\assets\sprites\objects\rock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.45882353"
+       d="m 209.50234,804.61761 27.8157,-26.5752 54.4343,0 35.8877,-34.71442 0.0346,-32.20518 5.89842,-5.96252"
+       id="path8996-8"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="D:\projects\rollingrocks\assets\sprites\objects\rock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#374954;stroke-width:7.99999952;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.55232562"
+       d="m 382.53304,806.64839 -7.80378,31.15372"
+       id="path8894-8-3-6"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="D:\projects\rollingrocks\assets\sprites\objects\rock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="opacity:1;fill:#444744;fill-opacity:0.67441861;stroke:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect8808-4"
+       width="83.337616"
+       height="2.2957559"
+       x="242.36037"
+       y="794.45239"
+       inkscape:export-filename="D:\projects\rollingrocks\assets\sprites\objects\rock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#646864;stroke-width:1.99999976;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.66666667"
+       d="m 370.77576,769.85037 -7.52638,-29.1409"
+       id="path8869-1"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="D:\projects\rollingrocks\assets\sprites\objects\rock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#575b57;stroke-width:1.99999988;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.66666667"
+       d="m 366.42222,768.35937 -9.7262,-37.04132"
+       id="path8869-1-9"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="D:\projects\rollingrocks\assets\sprites\objects\rock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#5a5b5a;stroke-width:2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.66666667"
+       d="m 319.79006,764.22173 30.125,-30.125 0,-17.375 7.5625,-7.5625"
+       id="path9109"
+       inkscape:connector-curvature="0" />
+    <path
+       sodipodi:type="star"
+       style="opacity:1;fill:#434f49;fill-opacity:0.52906979;stroke:none;stroke-width:1.58153319;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.66666667"
+       id="path9120"
+       sodipodi:sides="8"
+       sodipodi:cx="448.48068"
+       sodipodi:cy="807.27124"
+       sodipodi:r1="10.0082"
+       sodipodi:r2="8.6673555"
+       sodipodi:arg1="0.66646527"
+       sodipodi:arg2="1.0591644"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 456.34725,813.45842 -6.67907,3.75032 -7.37468,-2.07094 -3.75032,-6.67906 2.07094,-7.37468 6.67906,-3.75032 7.37469,2.07094 3.75031,6.67906 z"
+       transform="matrix(1.1038043,0.61710468,-0.61710468,1.1038043,363.35684,-348.72487)" />
+    <path
+       sodipodi:type="star"
+       style="opacity:1;fill:#3c3e56;fill-opacity:0.52906979;stroke:none;stroke-width:1.58153319;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.66666667"
+       id="path9120-1"
+       sodipodi:sides="8"
+       sodipodi:cx="448.48068"
+       sodipodi:cy="807.27124"
+       sodipodi:r1="10.0082"
+       sodipodi:r2="8.6673555"
+       sodipodi:arg1="0.66646527"
+       sodipodi:arg2="1.0591644"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 456.34725,813.45842 -6.67907,3.75032 -7.37468,-2.07094 -3.75032,-6.67906 2.07094,-7.37468 6.67906,-3.75032 7.37469,2.07094 3.75031,6.67906 z"
+       transform="matrix(0.78104666,0.44599084,-0.44599084,0.78104666,378.11086,-35.325633)" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#5a6a62;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.72674417"
+       d="M 393.72662,770.03313 383.4736,780.28619"
+       id="path9137"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#3e4a44;stroke-width:1.99999988;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.72674417"
+       d="m 394.9641,774.27581 -13.61176,13.61182"
+       id="path9137-4"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>
