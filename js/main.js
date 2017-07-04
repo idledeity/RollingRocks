@@ -3,7 +3,7 @@ let screenWidth = window.innerWidth || document.documentElement.clientWidth || d
 let screenHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 
 // Create a new Phaser Game instance
-let RollingRockGame = new Phaser.Game(screenWidth, screenHeight, Phaser.CANVAS, document.getElementById('game'), null, false, true);
+let RollingRockGame = new Phaser.Game(screenWidth, screenHeight, Phaser.AUTO, document.getElementById('game'), null, false, true);
 
 // Add the main game state to the game and start it running!!
 let mainGame = new MainGame(RollingRockGame);
