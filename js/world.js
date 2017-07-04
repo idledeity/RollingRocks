@@ -9,10 +9,8 @@ class GameWorld {
      * @param {Number} worldWidth - The width of the game world
      * @param {Number} worldHeight - The height of the game world
      */
-    constructor(game, worldWidth, worldHeight) {
+    constructor(game) {
         this.game = game;
-        this.worldWidth = worldWidth;
-        this.worldHeight = worldHeight;
 
         // Create the physics world
         this.physicsWorld = new GamePhysics();
@@ -31,16 +29,16 @@ class GameWorld {
      * Called after preload() once assets have been loaded and before the main update/render functions for any asset dependent initialization
      */
     create(jsonFile) {
-        // Create the physics world
-        this.physicsWorld.create(this.game.phaser.canvas, this.game.phaser.context, this.worldWidth, this.worldHeight);
-
         // Load the object's JSON definition
         this.definition = this.game.phaser.cache.getJSON(jsonFile);
 
         // Set the world extents
-        let width = this.definition.extents.max.x - this.definition.extents.min.x;
-        let height = this.definition.extents.max.y - this.definition.extents.min.y;
-        this.game.phaser.world.setBounds(this.definition.extents.min.x, this.definition.extents.min.y, width, height);
+        this.worldWidth = this.definition.extents.max.x - this.definition.extents.min.x;
+        this.worldHeight = this.definition.extents.max.y - this.definition.extents.min.y;
+        this.game.phaser.world.setBounds(this.definition.extents.min.x, this.definition.extents.min.y, this.worldWidth, this.worldHeight);
+
+        // Create the physics world
+        this.physicsWorld.create(this.game.phaser.canvas, this.game.phaser.context, this.game.phaser.scale.viewportWidth, this.game.phaser.scale.viewportHeight);
 
         // Create the world background layers
         this.background = {};
@@ -63,9 +61,6 @@ class GameWorld {
                 }
             }
         }
-
-
-
 
         // Create the height field
         if (this.definition.heightField != null && this.definition.heightField.points.length >= 2) {

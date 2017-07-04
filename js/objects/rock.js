@@ -18,12 +18,12 @@ class Rock extends GameObject {
 
         // Update the force line if the rock has been clicked
         if (this.clicked) {
-            // Get the current world position where the rock was clicked and update the line between there and the current moust cursor 
+            // Get the current world position where the rock was clicked and update the line between there and the current moust cursor
             let clickedWorldPos = this.getWorldFromLocal(this.clickedPos.x, this.clickedPos.y);
             let pointerWorldPos = this.gameWorld.game.viewToWorld(this.gameWorld.game.phaser.input.mousePointer);
 
             this.forceLine.setTo(clickedWorldPos.x, clickedWorldPos.y, pointerWorldPos.x, pointerWorldPos.y)
-        }    
+        }
     }
 
     /**
@@ -41,7 +41,7 @@ class Rock extends GameObject {
     /**
      * Callback function for when the rock object has been clicked
      * @param {Phaser.Object} clickedObj - The Phaser entity that was clicked (aka the rock!)
-     * @param {Phaser.Pointer} pointer - The pointer that clicked the rock 
+     * @param {Phaser.Pointer} pointer - The pointer that clicked the rock
      */
     onInputDownHandler(clickedObj, pointer) {
         // Convert the pointer position to world coordinates
@@ -61,7 +61,7 @@ class Rock extends GameObject {
     /**
      * Callback function for when the rock object has been un-clicked
      * @param {Phaser.Object} clickedObj - The Phaser entity that was clicked (aka the rock!)
-     * @param {Phaser.Pointer} pointer - The pointer that clicked the rock 
+     * @param {Phaser.Pointer} pointer - The pointer that clicked the rock
      */
     onInputUpHandler(clickedObj, pointer) {
         // If the rock hasn't previously been clicked, then nothing to do
@@ -74,12 +74,12 @@ class Rock extends GameObject {
 
         // Convert the pointer position to world coordinates
         let pointerWorldPos = this.gameWorld.game.viewToWorld(pointer);
-        
+
         // Generate a force from the clicked position and the current cursor position
-        let force = Phaser.Point.subtract(pointerWorldPos, clickedWorldPos); 
+        let force = Phaser.Point.subtract(pointerWorldPos, clickedWorldPos);
         force.divide(1000, 1000); // scale the force
         Matter.Body.applyForce(this.rigidBody, clickedWorldPos, force);
-        
+
         // Clear the rock clicked flag and force line
         this.clicked = false;
         this.forceLine = null;

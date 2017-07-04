@@ -10,15 +10,15 @@ class MainGame {
     constructor(phaser) {
         this.phaser = phaser;
         this.debugManager = null;
-
-        // Create a new game world
-        this.gameWorld = new GameWorld(this, 512, 600);
     }
 
     /**
      * Called before create() to request any assets that should are required
      */
     preload() {
+        // Create a new game world
+        this.gameWorld = new GameWorld(this);
+
         // Let the game world do any necessary preloading
         this.gameWorld.preload();
 
