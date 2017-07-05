@@ -50,9 +50,9 @@
      fit-margin-bottom="0"
      inkscape:window-width="1600"
      inkscape:window-height="837"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1" />
+     inkscape:window-x="-32000"
+     inkscape:window-y="-32000"
+     inkscape:window-maximized="0" />
   <metadata
      id="metadata8252">
     <rdf:RDF>
@@ -101,7 +101,10 @@ wgAAAABJRU5ErkJggg==
        width="8.0251265"
        height="37.389088"
        x="330.13623"
-       y="707.17883" />
+       y="707.17883"
+       inkscape:export-filename="D:\projects\rollingrocks\assets\sprites\objects\rock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <rect
        style="opacity:1;fill:#1d1e1d;fill-opacity:0.67441861;stroke:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect8808"
@@ -357,7 +360,10 @@ wgAAAABJRU5ErkJggg==
        width="50.91169"
        height="9.3691645"
        x="271.57397"
-       y="746.16821" />
+       y="746.16821"
+       inkscape:export-filename="D:\projects\rollingrocks\assets\sprites\objects\rock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#303530;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.45882353"
        d="m 209.27032,809.23565 28.5228,-27.9894 54.86108,0 38.13586,-36.74322 -0.0518,-32.17866 6.5625,-6.7173"
@@ -414,7 +420,10 @@ wgAAAABJRU5ErkJggg==
        style="fill:none;fill-rule:evenodd;stroke:#5a5b5a;stroke-width:2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.66666667"
        d="m 319.79006,764.22173 30.125,-30.125 0,-17.375 7.5625,-7.5625"
        id="path9109"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="D:\projects\rollingrocks\assets\sprites\objects\rock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <path
        sodipodi:type="star"
        style="opacity:1;fill:#434f49;fill-opacity:0.52906979;stroke:none;stroke-width:1.58153319;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.66666667"
@@ -430,7 +439,10 @@ wgAAAABJRU5ErkJggg==
        inkscape:rounded="0"
        inkscape:randomized="0"
        d="m 456.34725,813.45842 -6.67907,3.75032 -7.37468,-2.07094 -3.75032,-6.67906 2.07094,-7.37468 6.67906,-3.75032 7.37469,2.07094 3.75031,6.67906 z"
-       transform="matrix(1.1038043,0.61710468,-0.61710468,1.1038043,363.35684,-348.72487)" />
+       transform="matrix(1.1038043,0.61710468,-0.61710468,1.1038043,363.35684,-348.72487)"
+       inkscape:export-filename="D:\projects\rollingrocks\assets\sprites\objects\rock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <path
        sodipodi:type="star"
        style="opacity:1;fill:#3c3e56;fill-opacity:0.52906979;stroke:none;stroke-width:1.58153319;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.66666667"
@@ -446,16 +458,25 @@ wgAAAABJRU5ErkJggg==
        inkscape:rounded="0"
        inkscape:randomized="0"
        d="m 456.34725,813.45842 -6.67907,3.75032 -7.37468,-2.07094 -3.75032,-6.67906 2.07094,-7.37468 6.67906,-3.75032 7.37469,2.07094 3.75031,6.67906 z"
-       transform="matrix(0.78104666,0.44599084,-0.44599084,0.78104666,378.11086,-35.325633)" />
+       transform="matrix(0.78104666,0.44599084,-0.44599084,0.78104666,378.11086,-35.325633)"
+       inkscape:export-filename="D:\projects\rollingrocks\assets\sprites\objects\rock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#5a6a62;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.72674417"
        d="M 393.72662,770.03313 383.4736,780.28619"
        id="path9137"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="D:\projects\rollingrocks\assets\sprites\objects\rock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#3e4a44;stroke-width:1.99999988;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.72674417"
        d="m 394.9641,774.27581 -13.61176,13.61182"
        id="path9137-4"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="D:\projects\rollingrocks\assets\sprites\objects\rock.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
   </g>
 </svg>

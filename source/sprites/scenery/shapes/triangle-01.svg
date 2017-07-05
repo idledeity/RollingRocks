@@ -9,18 +9,18 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="143.57849mm"
-   height="1.9818701mm"
-   viewBox="0 0 508.74268 7.0223742"
-   id="svg7507"
+   width="20"
+   height="20"
+   viewBox="0 0 20 20"
+   id="svg9154"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="rect-04.svg"
-   inkscape:export-filename="D:\projects\rollingrocks\assets\sprites\scenery\shapes\rect-04.png"
+   sodipodi:docname="triangle-01.svg"
+   inkscape:export-filename="D:\projects\rollingrocks\assets\sprites\scenery\shapes\triangle-01.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
   <defs
-     id="defs7509" />
+     id="defs9156" />
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -28,23 +28,20 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="509.66625"
-     inkscape:cy="106.24855"
+     inkscape:zoom="22.4"
+     inkscape:cx="3.1459716"
+     inkscape:cy="10.510124"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
+     units="px"
      inkscape:window-width="1600"
      inkscape:window-height="837"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0" />
+     inkscape:window-maximized="1" />
   <metadata
-     id="metadata7512">
+     id="metadata9159">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -59,15 +56,24 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-404.22476,-773.57495)">
-    <rect
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:7;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect4227-6"
-       width="508.74271"
-       height="7.0223742"
-       x="404.22476"
-       y="773.57495"
-       inkscape:export-filename="D:\projects\rollingrocks\assets\sprites\scenery\water\water-01.png"
+     transform="translate(0,-1032.3622)">
+    <path
+       sodipodi:type="star"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.16152763;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.55232562"
+       id="path9702"
+       sodipodi:sides="3"
+       sodipodi:cx="2.9041886"
+       sodipodi:cy="1051.1941"
+       sodipodi:r1="5.3485098"
+       sodipodi:r2="4.9413786"
+       sodipodi:arg1="0.62402305"
+       sodipodi:arg2="1.6712206"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 7.244688,1054.3193 -9.2172166,-0.9288 5.4129351,-7.518 z"
+       transform="matrix(2.0135341,-1.2621006,1.4545033,1.7471823,-1528.1565,-790.60164)"
+       inkscape:export-filename="D:\projects\rollingrocks\assets\sprites\scenery\shapes\triangle-01.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
   </g>

@@ -1,5 +1,15 @@
 {
     "sprite": "sprites/objects/rock.png",
+    "arrow": {
+        "thickness": 2,
+        "baseImage": "sprites/objects/arrow-base.png",
+        "tipImage": "sprites/scenery/shapes/triangle-01.png",
+        "tint": "0xff4d6e",
+        "alpha": 0.90,
+        "lengthMin": 10,
+        "lengthMax": 250,
+        "maxForce": 1
+    },
     "collision": {
         "verticies": [
             { "x": 8, "y": 150 },

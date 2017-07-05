@@ -1,15 +1,27 @@
 {
     "rock": [
         {
+            "type": "json",
+            "key": "objects/rock.json",
+            "url": "assets/objects/rock.json",
+            "overwrite": false
+        },
+        {
             "type": "image",
             "key": "sprites/objects/rock.png",
             "url": "assets/sprites/objects/rock.png",
             "overwrite": false
         },
         {
-            "type": "json",
-            "key": "objects/rock.json",
-            "url": "assets/objects/rock.json",
+            "type": "image",
+            "key": "sprites/objects/arrow-base.png",
+            "url": "assets/sprites/objects/arrow-base.png",
+            "overwrite": false
+        },
+        {
+            "type": "image",
+            "key": "sprites/scenery/shapes/triangle-01.png",
+            "url": "assets/sprites/scenery/shapes/triangle-01.png",
             "overwrite": false
         }
     ]
